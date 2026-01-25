@@ -1,6 +1,6 @@
 --!strict
 
-local Repository = "https://raw.githubusercontent.com/bardium/bardium-hub/main/"
+local Repository = "https://raw.githubusercontent.com/bardium/hub/main/"
 local GroupId = (loadstring :: any)((game :: any):HttpGet(`{Repository}Constants/Location/GroupId.luau`))()
 local FrontierLocationName = (loadstring :: any)(
 	(game :: any):HttpGet(`{Repository}Constants/Location/LocationName/Frontier.luau`)

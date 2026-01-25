@@ -2,7 +2,7 @@
 
 local Workspace = game:GetService("Workspace")
 
-local Repository = "https://raw.githubusercontent.com/bardium/bardium-hub/main/"
+local Repository = "https://raw.githubusercontent.com/bardium/hub/main/"
 local getSpeakerNameByModel = (loadstring :: any)(
 	(game :: any):HttpGet(`{Repository}Utils/NPC/getSpeakerNameByModel.luau`)
 )()
