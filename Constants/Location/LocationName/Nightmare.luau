@@ -1,47 +1,86 @@
 --!strict
 
-export type EnumType = "Back of The Theatre" | "Blue Button" | "Blue Door" | "Cyan (Teal) Button" | "Cyan (Teal) Door" | "End of the Road" | "Fish Hall" | "Green Button" | "Green Door" | "Inside" | "Maze of the Root" | "Meeting Place" | "MYSTERY STORE" | "Orange Button" | "Orange Door" | "Pink Button" | "Pink Door" | "Purple Button" | "Purple Door" | "Red Button" | "Red Door" | "The Back Area" | "The Ballroom" | "The Deli" | "The Grand Hall" | "The Hidden Library" | "The Library of Riddles" | "The Lost" | "The Mansion" | "The Old Cave" | "The Old Mansion" | "The Plant Room" | "The Road" | "The Supermarket" | "The Theatre" | "The Vault" | "Waiting Room" | "Yellow Button" | "Yellow Door"
+export type EnumType =
+	"Back of The Theatre"
+	| "Blue Button"
+	| "Blue Door"
+	| "Cyan (Teal) Button"
+	| "Cyan (Teal) Door"
+	| "End of the Road"
+	| "Fish Hall"
+	| "Green Button"
+	| "Green Door"
+	| "Inside"
+	| "Maze of the Root"
+	| "Meeting Place"
+	| "MYSTERY STORE"
+	| "Orange Button"
+	| "Orange Door"
+	| "Pink Button"
+	| "Pink Door"
+	| "Purple Button"
+	| "Purple Door"
+	| "Red Button"
+	| "Red Door"
+	| "The Back Area"
+	| "The Ballroom"
+	| "The Deli"
+	| "The Grand Hall"
+	| "The Hidden Library"
+	| "The Library of Riddles"
+	| "The Lost"
+	| "The Mansion"
+	| "The Old Cave"
+	| "The Old Mansion"
+	| "The Plant Room"
+	| "The Road"
+	| "The Supermarket"
+	| "The Theatre"
+	| "The Vault"
+	| "Waiting Room"
+	| "Yellow Button"
+	| "Yellow Door"
 
 local Nightmare = {
-    ["Back of The Theatre"] = "Back of The Theatre" :: "Back of The Theatre",
-    ["Blue Button"] = "Blue Button" :: "Blue Button",
-    ["Blue Door"] = "Blue Door" :: "Blue Door",
-    ["Cyan (Teal) Button"] = "Cyan (Teal) Button" :: "Cyan (Teal) Button",
-    ["Cyan (Teal) Door"] = "Cyan (Teal) Door" :: "Cyan (Teal) Door",
-    ["End of the Road"] = "End of the Road" :: "End of the Road",
-    ["Fish Hall"] = "Fish Hall" :: "Fish Hall",
-    ["Green Button"] = "Green Button" :: "Green Button",
-    ["Green Door"] = "Green Door" :: "Green Door",
-    ["Inside"] = "Inside" :: "Inside",
-    ["Maze of the Root"] = "Maze of the Root" :: "Maze of the Root",
-    ["Meeting Place"] = "Meeting Place" :: "Meeting Place",
-    ["MYSTERY STORE"] = "MYSTERY STORE" :: "MYSTERY STORE",
-    ["Orange Button"] = "Orange Button" :: "Orange Button",
-    ["Orange Door"] = "Orange Door" :: "Orange Door",
-    ["Pink Button"] = "Pink Button" :: "Pink Button",
-    ["Pink Door"] = "Pink Door" :: "Pink Door",
-    ["Purple Button"] = "Purple Button" :: "Purple Button",
-    ["Purple Door"] = "Purple Door" :: "Purple Door",
-    ["Red Button"] = "Red Button" :: "Red Button",
-    ["Red Door"] = "Red Door" :: "Red Door",
-    ["The Back Area"] = "The Back Area" :: "The Back Area",
-    ["The Ballroom"] = "The Ballroom" :: "The Ballroom",
-    ["The Deli"] = "The Deli" :: "The Deli",
-    ["The Grand Hall"] = "The Grand Hall" :: "The Grand Hall",
-    ["The Hidden Library"] = "The Hidden Library" :: "The Hidden Library",
-    ["The Library of Riddles"] = "The Library of Riddles" :: "The Library of Riddles",
-    ["The Lost"] = "The Lost" :: "The Lost",
-    ["The Mansion"] = "The Mansion" :: "The Mansion",
-    ["The Old Cave"] = "The Old Cave" :: "The Old Cave",
-    ["The Old Mansion"] = "The Old Mansion" :: "The Old Mansion",
-    ["The Plant Room"] = "The Plant Room" :: "The Plant Room",
-    ["The Road"] = "The Road" :: "The Road",
-    ["The Supermarket"] = "The Supermarket" :: "The Supermarket",
-    ["The Theatre"] = "The Theatre" :: "The Theatre",
-    ["The Vault"] = "The Vault" :: "The Vault",
-    ["Waiting Room"] = "Waiting Room" :: "Waiting Room",
-    ["Yellow Button"] = "Yellow Button" :: "Yellow Button",
-    ["Yellow Door"] = "Yellow Door" :: "Yellow Door",
+	["Back of The Theatre"] = "Back of The Theatre" :: "Back of The Theatre",
+	["Blue Button"] = "Blue Button" :: "Blue Button",
+	["Blue Door"] = "Blue Door" :: "Blue Door",
+	["Cyan (Teal) Button"] = "Cyan (Teal) Button" :: "Cyan (Teal) Button",
+	["Cyan (Teal) Door"] = "Cyan (Teal) Door" :: "Cyan (Teal) Door",
+	["End of the Road"] = "End of the Road" :: "End of the Road",
+	["Fish Hall"] = "Fish Hall" :: "Fish Hall",
+	["Green Button"] = "Green Button" :: "Green Button",
+	["Green Door"] = "Green Door" :: "Green Door",
+	["Inside"] = "Inside" :: "Inside",
+	["Maze of the Root"] = "Maze of the Root" :: "Maze of the Root",
+	["Meeting Place"] = "Meeting Place" :: "Meeting Place",
+	["MYSTERY STORE"] = "MYSTERY STORE" :: "MYSTERY STORE",
+	["Orange Button"] = "Orange Button" :: "Orange Button",
+	["Orange Door"] = "Orange Door" :: "Orange Door",
+	["Pink Button"] = "Pink Button" :: "Pink Button",
+	["Pink Door"] = "Pink Door" :: "Pink Door",
+	["Purple Button"] = "Purple Button" :: "Purple Button",
+	["Purple Door"] = "Purple Door" :: "Purple Door",
+	["Red Button"] = "Red Button" :: "Red Button",
+	["Red Door"] = "Red Door" :: "Red Door",
+	["The Back Area"] = "The Back Area" :: "The Back Area",
+	["The Ballroom"] = "The Ballroom" :: "The Ballroom",
+	["The Deli"] = "The Deli" :: "The Deli",
+	["The Grand Hall"] = "The Grand Hall" :: "The Grand Hall",
+	["The Hidden Library"] = "The Hidden Library" :: "The Hidden Library",
+	["The Library of Riddles"] = "The Library of Riddles" :: "The Library of Riddles",
+	["The Lost"] = "The Lost" :: "The Lost",
+	["The Mansion"] = "The Mansion" :: "The Mansion",
+	["The Old Cave"] = "The Old Cave" :: "The Old Cave",
+	["The Old Mansion"] = "The Old Mansion" :: "The Old Mansion",
+	["The Plant Room"] = "The Plant Room" :: "The Plant Room",
+	["The Road"] = "The Road" :: "The Road",
+	["The Supermarket"] = "The Supermarket" :: "The Supermarket",
+	["The Theatre"] = "The Theatre" :: "The Theatre",
+	["The Vault"] = "The Vault" :: "The Vault",
+	["Waiting Room"] = "Waiting Room" :: "Waiting Room",
+	["Yellow Button"] = "Yellow Button" :: "Yellow Button",
+	["Yellow Door"] = "Yellow Door" :: "Yellow Door",
 }
 
 return Nightmare
