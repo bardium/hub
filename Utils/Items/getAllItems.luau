@@ -5,7 +5,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Repository = "https://raw.githubusercontent.com/bardium/hub/main/"
 local getItemById = (loadstring :: any)((game :: any):HttpGet(`{Repository}Utils/Items/getItemById.luau`))()
 
-type Item = {
+export type Item = {
 	Id: number,
 	Name: string,
 	Value: number,

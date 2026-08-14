@@ -2,7 +2,7 @@
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-type Item = {
+export type Item = {
 	Id: number,
 	Name: string,
 	Value: number,
