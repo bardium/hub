@@ -5,11 +5,14 @@ local Workspace = game:GetService("Workspace")
 
 local function getAllMonsters(): { Instance }
 	local monsters = {}
-	local spawnables = ReplicatedStorage:FindFirstChild("Spawnables")
-	local monstersFolder = if spawnables then spawnables:FindFirstChild("Monsters") else nil
-	if not monstersFolder then
-		return monsters
+
+	local npcsFolder = Workspace:FindFirstChild("NPCS")
+	if npcsFolder then
+		for _, monster in npcsFolder:GetChildren() do
+			table.insert(monsters, monster)
+		end
 	end
+
 	local guttermouthContainer = Workspace:FindFirstChild("Guttermouth")
 	local guttermouthRooms = {
 		if guttermouthContainer then guttermouthContainer:FindFirstChild("GuttermouthRoom1") else nil,
@@ -26,9 +29,15 @@ local function getAllMonsters(): { Instance }
 			table.insert(monsters, monster)
 		end
 	end
-	for _, monster in monstersFolder:GetChildren() do
-		table.insert(monsters, monster)
+
+	local spawnables = ReplicatedStorage:FindFirstChild("Spawnables")
+	local monstersFolder = if spawnables then spawnables:FindFirstChild("Monsters") else nil
+	if monstersFolder then
+		for _, monster in monstersFolder:GetChildren() do
+			table.insert(monsters, monster)
+		end
 	end
+
 	return monsters
 end
 
