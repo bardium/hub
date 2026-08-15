@@ -5,6 +5,9 @@ local GroupId = (loadstring :: any)((game :: any):HttpGet(`{Repository}Constants
 local FrontierLocationName = (loadstring :: any)(
 	(game :: any):HttpGet(`{Repository}Constants/Location/LocationName/Frontier.luau`)
 )()
+local HousingLocationName = (loadstring :: any)(
+	(game :: any):HttpGet(`{Repository}Constants/Location/LocationName/Housing.luau`)
+)()
 local NightmareLocationName = (loadstring :: any)(
 	(game :: any):HttpGet(`{Repository}Constants/Location/LocationName/Nightmare.luau`)
 )()
@@ -52,6 +55,16 @@ local PivotTableByGroupId: { [string]: { [string]: CFrame } } = {
 		[FrontierLocationName["Topple Town"]] = CFrame.new(685, 226, -461),
 		[FrontierLocationName["Twinkling Meadow"]] = CFrame.new(92, 73, -752),
 		[FrontierLocationName["Upper Island"]] = CFrame.new(-1361, 35, -2278),
+	},
+	[GroupId.Housing] = {
+		[HousingLocationName["Black Tower"]] = CFrame.new(1393, 138, -3225),
+		[HousingLocationName["Boathouse"]] = CFrame.new(-484, 3, -1694),
+		[HousingLocationName["Ice Spire"]] = CFrame.new(-2164, 38, -1220),
+		[HousingLocationName["Starting House"]] = CFrame.new(641, 237, -462),
+		[HousingLocationName["The Red Ogre Inn"]] = CFrame.new(-2836, 230, 153),
+		[HousingLocationName["Topple Castle"]] = CFrame.new(587, 312, -682),
+		[HousingLocationName["Topple House"]] = CFrame.new(626, 258, -553),
+		[HousingLocationName["White Tower"]] = CFrame.new(2093, 121, -459),
 	},
 	[GroupId.Nightmare] = {
 		[NightmareLocationName["Back of The Theatre"]] = CFrame.new(7799, 172, -3629),
